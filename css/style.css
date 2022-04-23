@@ -1,0 +1,744 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+a,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================= common css end ================================ */
+
+
+/* ============================= header part start ================================ */
+#header_part {
+    height: 50px;
+    background: #d9b257;
+    position: relative;
+}
+
+#header_part::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: url(../images/menu_shape.png) no-repeat center;
+    background-size: cover;
+    height: 89px;
+    z-index: -1;
+}
+
+#header_part h6 {
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+#header_part p {
+    line-height: 50px;
+    text-align: right;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+#header_part p span {
+    padding-left: 30px;
+}
+
+#header_part p span i {
+    padding-right: 5px;
+}
+
+/* ============================= header part end ================================ */
+
+/* ============================= menu part start ================================ */
+.main_menu {
+    height: 150px;
+    line-height: 150px;
+    padding-right: 160px !important;
+}
+
+.main_menu ul li a {
+    font-size: 16px;
+    color: #222;
+    font-weight: 500;
+    margin: 0 12px 0 !important;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.form_menu input {
+    border: none;
+    width: 100px !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+}
+
+.form_menu button {
+    border: 0;
+    color: #666;
+    font-size: 14px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    text-align: right;
+    padding: 8px 13px 7px;
+}
+
+.form_menu input:focus {
+    box-shadow: none;
+    border-color: #666;
+}
+
+.form_menu button:focus {
+    box-shadow: none;
+}
+
+.main_menu {
+    position: relative;
+}
+
+.form_menu {
+    position: absolute;
+    right: 0;
+    margin-left: auto;
+}
+
+.form_menu:hover input {
+    width: 175px !important;
+    border: 1px solid #999;
+    margin-right: -40px !important;
+    padding-right: 40px;
+}
+
+.main_menu ul li a.active {
+    color: #d9b257;
+}
+
+.main_menu ul li a:hover {
+    color: #d9b257;
+}
+
+.main_menu .drop_menu li a {
+    margin: 0 !important;
+    line-height: 30px;
+}
+
+.drop_menu {
+    padding: 0 !important;
+}
+
+/* ============================= menu part end ================================ */
+
+/* ============================= banner part start ================================ */
+.banner_item {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+.banner_item .overly {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 150px 0 370px;
+}
+
+#banner_part {
+    position: relative;
+}
+
+.small_slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.small_slider_text {
+    border-top: 1px solid #fff;
+    margin-right: 24px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.banner_text p {
+    color: #d9b257;
+    font-size: 16px;
+    padding-bottom: 30px;
+    font-weight: 500;
+}
+
+.banner_text h5 {
+    color: #fff;
+    font-size: 54px;
+}
+
+.banner_text h4 {
+    color: #fff;
+    font-size: 54px;
+    font-weight: 700;
+    padding-bottom: 60px;
+}
+
+.small_ban_des h2 {
+    padding-top: 55px;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.small_ban_des h5 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.small_ban_des p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.ban_small_slider .slick-current .small_slider_text {
+    border-color: #d9b257;
+}
+
+.banner_text a {
+    padding: 13px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.banner_text a i {
+    padding-left: 40px;
+    position: relative;
+}
+
+.banner_text a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #d9b257;
+    z-index: -1;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.banner_text a:hover::after {
+    height: 100%;
+}
+
+.banner_text a i::after {
+    position: absolute;
+    content: "";
+    left: 22px;
+    bottom: -20px;
+    width: 2px;
+    height: 0px;
+    background: #222;
+    transform: rotate(12deg);
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -webkit-transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    -o-transform: rotate(12deg);
+}
+
+.banner_text a:hover i::after {
+    height: 55px;
+}
+
+/* ============================= banner part end ================================ */
+
+/* ============================= about part start ================================ */
+.coun_per {
+    position: relative;
+    margin-right: 50px;
+}
+
+.coun_per::after {
+    position: absolute;
+    content: "%";
+}
+
+.about_last {
+    padding: 90px 0;
+}
+
+.about_last h2 span {
+    font-size: 60px;
+    color: #d9b257;
+    font-weight: 700;
+}
+
+.about_last h2 {
+    font-size: 24px;
+    color: #999999;
+    font-weight: 700;
+}
+
+.about_mar {
+    margin-bottom: 70px;
+}
+
+.about_line {
+    position: relative;
+}
+
+.about_line::after {
+    position: absolute;
+    content: "";
+    top: -35px;
+    left: 65px;
+    width: 60px;
+    height: 3px;
+    background: #d9b257;
+}
+
+.about_mid {
+    padding: 90px 0;
+}
+
+.about_mid h3 {
+    font-size: 16px;
+    color: #d9b257;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.about_mid h4 {
+    font-size: 28px;
+    color: #999999;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.about_mid p {
+    font-size: 16px;
+    color: #444444;
+    font-weight: 400;
+    margin-bottom: 55px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about_mid a {
+    font-size: 20px;
+    color: #222222;
+    font-weight: 500;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.about_mid a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #d9b257;
+    z-index: -1;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.about_mid a:hover::after {
+    height: 100%;
+}
+
+.about_mid a:hover {
+    color: #fff;
+}
+
+/* ============================= about part end ================================ */
+
+/* ============================= service part start ================================ */
+#service_part {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    padding-bottom: 165px;
+    position: relative;
+    z-index: 1;
+}
+
+#service_part::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: -1;
+}
+
+.com_head h3 {
+    font-size: 16px;
+    color: #d9b257;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.com_head h4 {
+    font-size: 28px;
+    color: #999999;
+    font-weight: 400;
+}
+
+.com_head {
+    padding: 60px 0 60px;
+}
+
+.ser_img_one img {
+    height: 400px;
+}
+
+.ser_img_one {
+    position: relative;
+}
+
+.ser_img_one .overly {
+    position: absolute;
+    width: 400px;
+    padding: 30px;
+    text-align: right;
+    background: #fff;
+    border: 1px solid #d9b257;
+    right: -50px;
+    bottom: -30px
+}
+
+.ser_margin {
+    margin-right: 50px;
+}
+
+.ser_img_one .overly h3 {
+    font-size: 16px;
+    color: #d9b257;
+    margin-bottom: 10px;
+}
+
+.ser_img_one .overly h4 {
+    color: #999999;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 15px;
+}
+
+.ser_img_one .overly a {
+    font-size: 20px;
+    color: #222222;
+    font-weight: 500;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.ser_img_one .overly a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #d9b257;
+    z-index: -1;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.ser_img_one .overly a:hover::after {
+    height: 100%;
+}
+
+.ser_img_one .overly a:hover {
+    color: #fff;
+}
+
+.service_slider .row {
+    display: flex !important;
+}
+
+.service_mar2 {
+    margin-right: 30px;
+}
+
+.service_slider .draggable {
+    padding-bottom: 35px;
+}
+
+#service_part ul.slick-dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: -60px;
+    transform: translateX(-50%);
+}
+
+#service_part ul.slick-dots li button {
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#service_part ul.slick-dots li button:focus {
+    outline: 0 !important;
+}
+
+#service_part ul.slick-dots li.slick-active button {
+    background: #d9b257;
+    border-color: #d9b257;
+    height: 18px;
+    width: 18px;
+}
+
+/* ============================= service part end ================================ */
+
+/* ============================= project part start ================================ */
+#project_part {
+    padding: 40px 0 0;
+}
+
+.img_div {
+    position: relative;
+    z-index: -1;
+}
+
+.img_div .overly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    opacity: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.img_div .overly a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.text_div h4 {
+    font-size: 14px;
+    color: #999999;
+    font-weight: 500;
+    padding-top: 25px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.text_div h2 {
+    font-size: 20px;
+    color: #999999;
+    font-weight: 500;
+    padding-top: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.pro_hov:hover .img_div .overly {
+    height: 100%;
+    opacity: 1;
+}
+
+.pro_hov:hover h2 {
+    color: #d9b257;
+}
+
+.pro_hov:hover h4 {
+    color: #d9b257;
+}
+
+.pro_h4 {
+    padding-left: 30px;
+}
+
+.pro_h2 {
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.project_link {
+    padding-top: 55px;
+}
+
+.project_link a {
+    font-size: 20px;
+    color: #222222;
+    font-weight: 500;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.project_link a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #d9b257;
+    z-index: -1;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.project_link a:hover::after {
+    height: 100%;
+}
+
+.project_link a:hover {
+    color: #fff;
+}
+
+/* ============================= project part end ================================ */
+
+/* ============================= testimonial part start ================================ */
+
+/* ============================= testimonial part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
